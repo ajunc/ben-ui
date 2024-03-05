@@ -1,16 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Demo />
+  <b-card
+    imgSrc="logo.png"
+    summary="vueZIDINGY"
+  >
+    <template v-slot:footer>
+      <h3>footer</h3>
+    </template>
+  </b-card>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {}
 }
 </script>
 

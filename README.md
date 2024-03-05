@@ -1,24 +1,21 @@
-# ben-ui
+# b-ui 组件库
 
-## Project setup
-```
-npm install
-```
+### 快速开始
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### 1.安装组件库
+```bash
+npm i ben-ui
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 2. 引用组件库
+```javascript
+//全部引入
+import 'ben-ui/dis/css/index.css';
+import BUI from 'ben-ui';
+Vue.use(BUI)
 
-### Lints and fixes files
+//按需引入
+import 'ben-ui/dis/css/demo.css';
+import {Demo} from 'ben-ui'
+Vue.use(Demo)
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
